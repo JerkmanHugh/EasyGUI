@@ -6,6 +6,7 @@
 #include <Adafruit_GFX.h>
 #include <UTFTGLUE.h>
 #include <Print.h>
+
 //#include <ADA_GFX_kbv.h>
 
 
@@ -17,7 +18,8 @@ class Gui : public UTFTGLUE
     void backColor(int r, int g, int b);
     void initDisplay();
     void clearDisplay();
-    void drawButton(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t r, int16_t g ,int16_t b);
+    void drawButton(char txt[256], int16_t x0, int16_t y0);
+    void drawTextfield(char txt[256], int16_t x0, int16_t y0);
 
 };
 
