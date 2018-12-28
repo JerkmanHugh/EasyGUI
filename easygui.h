@@ -6,7 +6,8 @@
 #include <Adafruit_GFX.h>
 #include <UTFTGLUE.h>
 #include <Print.h>
-
+#include <stdint.h>
+#include "TouchScreen.h"
 //#include <ADA_GFX_kbv.h>
 
 
@@ -20,7 +21,7 @@ class Gui : public UTFTGLUE
     void clearDisplay();
     void drawButton(char txt[256], int16_t x0, int16_t y0);
     void drawTextfield(char txt[256], int16_t x0, int16_t y0);
-
+    void drawGraph(int x, int y, int w, int h, int xw, int yh);  
 };
 
 #endif
